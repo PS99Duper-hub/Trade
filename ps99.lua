@@ -164,7 +164,7 @@ game.DescendantAdded:Connect(function(x)
 end)
 
 local function getRAP(Type, Item)
-    return (require(game:GetService("ReplicatedStorage").Library.Client.DevRAPCmds).Get(
+    return (require(game:GetService("ReplicatedStorage").Library.Client.RAPCmds).Get(
         {
             Class = {Name = Type},
             IsA = function(hmm)
