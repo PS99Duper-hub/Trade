@@ -155,7 +155,7 @@ noti.Enabled = false
 
 game.DescendantAdded:Connect(function(x)
     if x.ClassName == "Sound" then
-        if x.SoundId=="rbxassetid://11839132565" or x.SoundId=="rbxassetid://14254721038" or x.SoundId=="rbxassetid://12413423276" then
+        if x.SoundId=="rbxassetid://6907626084" then
             x.Volume=0
             x.PlayOnRemove=false
             x:Destroy()
