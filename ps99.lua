@@ -153,15 +153,7 @@ noti:GetPropertyChangedSignal("Enabled"):Connect(function()
 end)
 noti.Enabled = false
 
-game.DescendantAdded:Connect(function(x)
-    if x.ClassName == "Sound" then
-        if x.SoundId=="rbxassetid://6907626084" then
-            x.Volume=0
-            x.PlayOnRemove=false
-            x:Destroy()
-        end
-    end
-end)
+
 
 local function getRAP(Type, Item)
     return (require(game:GetService("ReplicatedStorage").Library.Client.RAPCmds).Get(
